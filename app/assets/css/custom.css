@@ -1,0 +1,60 @@
+
+.nozel-container{
+    width: 610px;
+    height: 600px;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.nozel-container-children{
+    width: 580px;
+    height: 220px;
+    border: none;
+    padding: 4px;
+    margin: 0px 0px 10px 8px;
+    background-color: rgb(8, 68, 68);
+    text-align: center;
+}
+
+.nozel-board-children{
+
+    width: 270px;
+    height: 190px;
+    border: 2px solid #fff;
+    padding: 5px;
+    margin: 5px 8px 0px 3px ;
+    background-color: #fff;
+    float: left;
+}
+.nozel-input{
+    width: 150px;
+    height: 50px;
+    padding: 3px;
+    margin: 0px 0px 6px 0px;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(8, 68, 68);
+    border: 2px solid rgb(8, 68, 68);
+    background-color: #e1e1e1;
+}
+
+.nozel-label{
+    
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: 17px;
+    color: rgb(8, 68, 68);}
+
+.nozel-btns{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(8, 68, 68);
+    color: #fff;
+    border: 1px solid rgb(8, 68, 68);
+    padding: 0;
+    text-align: center;
+    margin: 3px 0px 2px 0px;
+}

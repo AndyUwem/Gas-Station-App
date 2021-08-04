@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Reflux HTML CSS Template</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+    
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Reflux Me</h4>
+              <span>Web Designer</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://fb.com/templatemo"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- End of Sidebar -->
+    <!-- body content starts here -->
+
+      <section class="section contact-me" data-section="section4">
+       
+          <div class="section-heading">
+            <h2>Gas Station</h2>
+            <div class="line-dec"></div>
+          </div>
+                 <div class="nozel-container">
+                   <div id="nozel-board" class="nozel-container-children">
+                         <div class="nozel-board-children">
+                              <label for="sales" class="nozel-label">Sales :</label>
+                              <input type="text" id="salesScreen" disabled placeholder="0" class="nozel-input"> <br>
+                              <label for="sales" class="nozel-label">Liter  :</label>
+                              <input type="text" id="literScreen" disabled placeholder="0" class="nozel-input"> <br>
+                              <label for="sales" class="nozel-label">Price : </label>
+                              <input type="text" id="Price" disabled placeholder="180" class="nozel-input"> <br>
+                         </div>
+                         <div class="nozel-board-children" style="width: 180px; padding: 0px;">
+                           <button class="nozel-btns" id="btn1">1</button>
+                           <button class="nozel-btns" id="btn2">2</button>
+                           <button class="nozel-btns" id="btn3">3</button>
+                           <button class="nozel-btns" id="btn4">4</button>
+                           <button class="nozel-btns" id="btn5">5</button>
+                           <button class="nozel-btns" id="btn6">6</button>
+                           <button class="nozel-btns" id="btn7">7</button>
+                           <button class="nozel-btns" id="btn8">8</button>
+                           <button class="nozel-btns" id="btn9">9</button>
+                           <button class="nozel-btns" id="btn0">0</button>
+                         </div>
+
+                         <div class="nozel-board-children" style="width: 80px;">
+                          <button class="nozel-btns" id="btnOn">O</button>
+                           <button class="nozel-btns" id="btnOff">F</button>
+                           <button class="nozel-btns" id="btnClear">C</button>
+                           <button class="nozel-btns" id="btnSell">S</button>
+                     </div>
+                   </div>
+                   <div id="nozel-body" class="nozel-container-children" style="height: 340px;"></div>
+                   </div>
+                   
+
+                 </div>
+ 
+       
+
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/nozel.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
